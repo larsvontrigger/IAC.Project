@@ -40,8 +40,3 @@ In the automotive industry, quality auditors frequently deal with repetitive tas
 4. **Hyperlinking**:
    The UI provides clickable hyperlinks that open the relevant Excel file, directing the user to the correct sheet for inputting measurement data.
 
-## 🔧 Installation & Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo-url
