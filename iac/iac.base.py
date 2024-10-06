@@ -5,6 +5,11 @@ from datetime import datetime
 # Получаем текущую дату
 today = datetime.today()
 current_day = today.strftime("%d.%B").lower()
+
+#Чистим день от нулей
+if current_day.startswith('0'):
+    current_day = current_day[1:]
+
 current_month = today.strftime("%m %B").lower()
 current_time = datetime.now().time()
 
@@ -25,7 +30,7 @@ if os.path.exists(month_folder_path):
 else:
     print(f"Subor {current_month} neexistuje.")
     exit()
-
+print(current_day)
 # Проверяем существует ли файл с планом на день
 if file_name:
     # Путь к найденному файлу

@@ -2,8 +2,8 @@ import os
 import subprocess
 import pandas as pd
 
-root_measurment = "/Users/piratejet/Documents/IAC.SERVER/Quality/07 Uvolnenie produkcie/2024/"
-root_formular = "/Users/piratejet/DOcuments/IAC.SERVER/01 MS/06 Dokumentacia/05 Q (QUA)/Uvolnenie 1ks/"
+root_measurment = "/Users/piratejet/Documents/IAC.SERVER/Quality/07 Uvolnenie produkcie/2024"
+root_formular = "/Users/piratejet/Documents/IAC.SERVER/01 MS/06 Dokumentacia/065 Formulare/05 Q (QUA)"
 
 details_paths = {
 "AU736":"123",
@@ -227,10 +227,6 @@ details_paths = {
 "WIP IM Rahmen Serviced.PHEV":{
     "formular_table":("Audi Q7/F-Q052-08","38"),
 },
-}
-
-'''
-details_paths = {
 
 #Touareg
 "Touareg3":"123",
@@ -1082,7 +1078,7 @@ details_paths = {
     "formular_table":("Škoda SK316/F-Q381-01","1"),
 },
 }
-'''
+
 measurment_list = []
 formular_list = []
 #Функция которая достает путь и лист в виде массива кортежей для каждой детали(по необходимой таблице)
