@@ -4,7 +4,7 @@ from datetime import datetime
 from PyQt5 import QtWidgets, QtCore
 import locale
 import unicodedata
-from iac.database import details_paths, root_measurment, root_formular  # Импортируем базу данных
+from path_dict import details_paths, root_measurment, root_formular  # Импортируем базу данных
 
 class ShiftApp(QtWidgets.QWidget):
     def __init__(self):
