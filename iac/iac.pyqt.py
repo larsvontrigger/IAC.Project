@@ -83,11 +83,11 @@ class ShiftApp(QtWidgets.QWidget):
         else:
             self.result_text.setText(f"Plan na {current_day} ešte neexistuje.")
             return
-
         parts_for_shift_indices = self.get_parts_for_shift(data, shift)
         project_parts = self.get_project_with_parts(data, parts_for_shift_indices)
 
         self.result_text.clear()
+
         for project, parts in project_parts.items():
             self.result_text.append(f"\n{project}:")
 
@@ -100,7 +100,7 @@ class ShiftApp(QtWidgets.QWidget):
                         measurment_path = os.path.join(root_measurment, measurment_table[0])
                         # Создаем гиперссылку
                         hyperlink = self.create_hyperlink(measurment_path, part)
-                        self.result_text.append(f"  Измерения: {hyperlink}")
+                        self.result_text.append(f"  Tabule: {hyperlink}")
 
                     # Получаем путь к формуляру
                     formular_table = details_paths[part].get('formular_table')
@@ -108,7 +108,7 @@ class ShiftApp(QtWidgets.QWidget):
                         formular_path = os.path.join(root_formular, formular_table[0])
                         # Создаем гиперссылку
                         hyperlink = self.create_hyperlink(formular_path, part)
-                        self.result_text.append(f"  Формуляр: {hyperlink}")
+                        self.result_text.append(f"  Formulare: {hyperlink}")
                 else:
                     self.result_text.append(f"  {part}")
 
